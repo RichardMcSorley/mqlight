@@ -29,6 +29,7 @@ workflows:
   deploy:
     jobs:
       - deploy:
+          context: gks
           filters:
             branches:
               only: master
